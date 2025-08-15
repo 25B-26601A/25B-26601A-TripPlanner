@@ -1,0 +1,30 @@
+:root {
+  --font-sans: "Urbanist", system-ui, -apple-system, Segoe UI, Roboto, "Helvetica Neue", Arial, "Noto Sans", "Apple Color Emoji", "Segoe UI Emoji";
+
+  --c-bg: #ffffff;
+  --c-text: #111111;
+  --c-muted: #333333;
+  --c-muted-2: #666666;
+  --c-border: #eaeaea;
+  --c-surface: #f7f7f9;
+  --c-accent: #111111;
+
+  --radius: 12px;
+  --shadow: 0 6px 20px rgba(0,0,0,0.04);
+  --container: 1100px;
+}
+
+html, body, #root { height: 100%; }
+body { margin: 0; font-family: var(--font-sans); color: var(--c-text); background: var(--c-bg); }
+
+.container { max-width: var(--container); margin: 0 auto; padding: 1.25rem; }
+
+.card { border: 1px solid var(--c-border); border-radius: var(--radius); background: #fff; box-shadow: var(--shadow); }
+
+.btn {
+  display: inline-flex; align-items: center; gap: .5rem;
+  padding: .65rem .9rem; border-radius: 10px; border: 1px solid var(--c-border);
+  text-decoration: none; color: var(--c-text); background: #fff; font-weight: 700;
+}
+.btn:hover { background: var(--c-surface); }
+.btn-ghost { background: transparent; border-color: transparent; }

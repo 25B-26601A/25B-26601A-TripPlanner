@@ -1,0 +1,77 @@
+/* layout */
+.page { margin: 0 auto; padding: 1.5rem; display: grid; gap: 16px; }
+.page.narrow { max-width: 720px; }
+.page.wide { max-width: 1100px; }
+.max-720 { max-width: 720px; }
+
+/* typography */
+.h1 { font-size: 24px; font-weight: 800; margin: 0 0 12px; }
+.h2 { font-size: 22px; font-weight: 800; margin: 0 0 8px; }
+.label { font-size: 14px; }
+.muted { color: #475569; }
+.m0 { margin: 0; }
+
+/* grid & rows */
+.grid { display: grid; }
+.gap { gap: 12px; }
+.gap-6 { gap: 6px; }
+.row { display: flex; gap: 8px; align-items: center; }
+.row.space { justify-content: space-between; }
+.ml-auto { margin-left: auto; }
+.flex1 { flex: 1; }
+
+/* inputs/buttons */
+.input { padding: 10px 12px; border-radius: 10px; border: 1px solid #e5e7eb; }
+.textarea { resize: vertical; }
+.btn { padding: 10px 14px; border-radius: 10px; border: 1px solid #e5e7eb; background: #fff; cursor: pointer; }
+.btn[disabled] { cursor: not-allowed; opacity: 0.7; }
+.link { font-size: 14px; text-decoration: none; color: inherit; }
+.linkish { text-decoration: none; color: inherit; background: #fff; }
+
+/* cards */
+.card { border: 1px solid #e5e7eb; border-radius: 12px; background: #fff; overflow: hidden; padding: 16px; }
+.cardBody { padding: 16px 0 0; }
+
+/* alerts */
+.alert { padding: 0.6rem 0.8rem; border-radius: 10px; }
+.alert.error { color: #b00020; background: #ffe8ea; }
+.alert.success { color: #0a6b2d; background: #e8f6ee; }
+
+/* sections */
+.planForm { padding: 0 0 8px; }
+.titleRow { display: flex; align-items: center; gap: 12px; }
+
+/* stats row */
+.statsRow { margin-top: 8px; display: flex; gap: 12px; font-size: 13px; color: #64748b; }
+
+/* mode tag */
+.modeTag {
+  display: inline-flex; align-items: center; gap: 6px;
+  padding: 8px 12px; border-radius: 999px;
+  font-weight: 800; font-size: 16px; line-height: 1; letter-spacing: .3px;
+  text-transform: uppercase; border: 1px solid transparent;
+}
+.modeBike { background: rgba(37,99,235,.18); color: #1d4ed8; border-color: rgba(37,99,235,.45); }
+.modeWalk { background: rgba(16,185,129,.20); color: #047857; border-color: rgba(16,185,129,.45); }
+
+/* lists */
+.itineraryList { padding-left: 18px; margin: 0; display: grid; gap: 12px; }
+.itineraryItem { border-top: 1px solid #e5e7eb; padding-top: 8px; }
+.dayTitle { font-weight: 700; }
+.dayMeta { font-size: 13px; color: #666; }
+.dayStops { font-size: 14px; }
+.highlights { margin: 6px 0 0 18px; }
+
+.sectionTitle { font-weight: 700; margin-bottom: 4px; }
+.perDayList { margin: 6px 0 0 18px; }
+
+.placesList { margin: 0; padding-left: 18px; display: grid; gap: 10px; }
+.placeName { font-weight: 700; }
+.placeSummary { color: #475569; }
+
+.stepper { display: grid; grid-auto-flow: column; grid-auto-columns: minmax(140px, 1fr); align-items: center; gap: 16px; }
+.stepperItem { position: relative; display: grid; justify-items: center; align-items: center; gap: 6px; }
+.stepperDot { width: 12px; height: 12px; border-radius: 999px; border: 2px solid #94a3b8; background: #fff; }
+.stepperDot.isActive { background: #1d4ed8; border-color: #1d4ed8; }
+.stepperLabel { font-size: 13px; color: #334155; text-align: center; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; max-width: 160px; }
+.stepperLine { position: absolute; top: 6px; right: -8px; width: calc(100% + 16px); height: 2px; background: #e5e7eb; z-index: -1; }

@@ -1,0 +1,74 @@
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  backdrop-filter: saturate(1.2) blur(6px);
+  background: rgba(255,255,255,0.85);
+  border-bottom: 1px solid #eee;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.04);
+}
+
+.nav {
+  max-width: 85%;
+  margin: 0 auto;
+  padding: 0.75rem 1rem;
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+  gap: 12px;
+}
+
+.brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  color: #111;
+  text-decoration: none;
+}
+
+.logo { font-size: 22px; }
+.title { font-weight: 800; letter-spacing: 0.2px; }
+
+.center {
+  justify-self: center;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.right {
+  justify-self: end;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.link {
+  padding: 0.5rem 0.75rem;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: 600;
+  color: #333;
+  transition: background 160ms ease, transform 120ms ease;
+}
+
+.link:hover { background: #ececf1; }
+.link:active { transform: translateY(1px); }
+.active:hover { background: #dedee6; }
+
+.active {
+  color: #111;
+  background: #e7e7ec;
+}
+.icon {
+  width: 18px;
+  height: 18px;
+  margin-right: 6px;
+  vertical-align: -2px;
+}
+
+.btn {
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+}

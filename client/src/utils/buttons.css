@@ -1,0 +1,42 @@
+.btn {
+  appearance: none;
+  border: 0;
+  background: #f1f5f9;
+  color: #111;
+  font-weight: 800;
+  line-height: 1;
+  padding: 10px 14px;
+  border-radius: 14px;
+  cursor: pointer;
+  user-select: none;
+  transition: background 160ms ease, transform 120ms ease, box-shadow 160ms ease;
+}
+.btn:hover { background: #e9eef3; }
+.btn:active { transform: translateY(1px); }
+.btn:disabled { opacity: .5; pointer-events: none; }
+
+.btn-lg { padding: 12px 18px; border-radius: 16px; font-size: 15px; }
+.btn-sm { padding: 7px 10px; border-radius: 12px; font-size: 13px; }
+
+/* soft (no outline) */
+.btn-soft { background: #e7e7ec; }
+.btn-soft:hover { background: #dedee6; }
+
+/* gentle outline */
+.btn-outline { background: #fff; border: 1px solid #e5e7eb; }
+.btn-outline:hover { background: #ececf1; }
+.btn-outline.is-active { background: #e7e7ec; }
+
+/* colored chips */
+.btn-chip { background: #f1f5f9; border: 0; }
+.btn-chip:hover { background: #e9eef3; }
+
+.is-active.btn-chip { background: var(--btn-tint); }
+.is-active.btn-chip:hover { background: var(--btn-tint-hover); }
+
+.is-blue { --btn-color:#2563eb; --btn-tint:rgba(37,99,235,.12); --btn-tint-hover:rgba(37,99,235,.18); color: var(--btn-color); }
+.is-green{ --btn-color:#059669; --btn-tint:rgba(5,150,105,.12);  --btn-tint-hover:rgba(5,150,105,.18);  color: var(--btn-color); }
+.is-slate{ --btn-color:#334155; --btn-tint:rgba(51,65,85,.10);   --btn-tint-hover:rgba(51,65,85,.16);  color: var(--btn-color); }
+
+/* groups */
+.btn-group { display:flex; gap:8px; flex-wrap:wrap; }
