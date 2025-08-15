@@ -73,19 +73,18 @@ npm install
 
 ### 3️⃣ Environment Variables
 
-You will need `.env` files for both **client** and **server**.
-
-**`client/.env` example:**
-```env
-VITE_API_URL=http://localhost:5000
-VITE_PEXELS_API_KEY=your_pexels_api_key
-```
+You will need `.env` file for the **server**.
 
 **`server/.env` example:**
 ```env
-PORT=5000
-MONGODB_URI=mongodb://localhost:27017/tripplanner
-PEXELS_API_KEY=your_pexels_api_key
+MONGO_URI=your_mongo_url
+OSRM_URL=https://router.project-osrm.org
+PORT=5050
+JWT_SECRET=long_string
+PEXELS_KEY=your_pexels_api_key
+UNSPLASH_KEY=your_unsplash_api_key
+GROQ_KEY=your_groq_api_key
+
 ```
 
 ---
