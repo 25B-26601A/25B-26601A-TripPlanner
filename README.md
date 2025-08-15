@@ -99,9 +99,11 @@ npm run dev
 ```
 
 **Run Frontend**
+
+(Different console)
 ```bash
-cd ../client
-npm run dev
+cd client
+npm start
 ```
 
 **Access App**  
